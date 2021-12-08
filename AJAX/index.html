@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elokuvahaku</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Movie Search</h1>
+    
+    <div class="input-div">
+        
+        <input type="text" placeholder="Hae elokuvaa" class="input-field">
+        <!-- Tämä nappi tekee AJAF haun -->
+        <button type="button" class="button-get">Hae</button>
+        <!-- Nappi poistaa elokuvan listalta -->
+        <button type="button" class="button-remove">Tyhjennä kaikki</button>
+    </div>
+
+    <!-- Kenttä näyttää AJAXin avulla haetun tuloksen -->
+    <div class="data-show">
+       
+    </div>
+    <div class="wrong-title-div">
+        <p>Wrong movie title!</p>
+        <p>Try something else!</p>
+        <button class="btn-wrong-title">Fine</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

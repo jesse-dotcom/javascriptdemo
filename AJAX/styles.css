@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right,#2b5876, #4e4376);
+    overflow: hidden;
+}
+
+body > h1 {
+    color: #70faff;
+    font-size: 3rem;
+}
+
+.input-div {
+    margin: 2rem 0 2.5rem 0;
+}
+
+.input-field {
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    outline: none;
+    color: #70faff;
+    border: 3px solid #70faff;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.input-field:focus {
+    background-color: #050A30;
+}
+
+::placeholder {
+    color: #70faff;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: #70faff;
+    border: 3px solid #70faff;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    background-color: #050A30;
+}
+
+.data-show {
+    width: 90%;
+}
+
+.main {
+    height: 75vh;
+    display: flex;
+    margin: 1rem 0 2rem 0;
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.main:hover {
+    background-color: rgba(255, 251, 240, 0.2);
+    cursor: pointer;
+}
+
+.main:hover > .remove {
+    visibility: visible;
+}
+
+.remove {
+    font-size: 2rem;
+    position: relative;
+    right: 2%;
+    top: 1%;
+    visibility: hidden;
+}
+
+.main-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.main-right {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rating-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    border: 5px solid #70faff;
+    border-radius: 50%;
+    color: #70faff;
+    
+}
+
+.rating-number {
+    font-size: 6rem;
+}
+
+.wrong-title-div {
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    height: 7rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 251, 240, 0.5);
+    border: 2px solid #70faff;
+    border-radius: 15px;
+    display: none;   
+}
+
+
+@media only screen and (max-width: 1366px) {
+    html {
+        font-size: 1rem;
+    }
+}
